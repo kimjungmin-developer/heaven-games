@@ -30,4 +30,8 @@ public class RoomRepository {
     public List<Room> getAll() {
         return new ArrayList(rooms.values());
     }
+
+    public Room findById(int roomId) {
+        return rooms.get(roomId);
+    }
 }
